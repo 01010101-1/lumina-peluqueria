@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nueva cita · Lúmina</title><link rel="stylesheet" href="css/estilos.css"></head>
+<body><div class="app"><aside id="menu" class="menu"></aside><main>
+<div class="cabecera"><div><h1>Nueva cita</h1><p>Los campos con * son obligatorios.</p></div></div>
+<section class="caja"><form id="form-cita" novalidate>
+<label for="cliente" style="margin-top:0">Cliente *</label><input id="cliente" name="cliente" placeholder="Nombre del cliente">
+<div class="dos"><div><label for="servicio">Servicio *</label><select id="servicio" name="servicio"><option value="">Elige un servicio</option><option>Corte + brushing</option><option>Coloración completa</option><option>Manicure semipermanente</option><option>Limpieza facial</option><option>Balayage</option></select></div>
+<div><label for="profesional">Profesional *</label><select id="profesional" name="profesional"><option value="">Elige una persona</option><option>Valentina</option><option>Sofía</option><option>Elena</option><option>Martina</option></select></div></div>
+<div class="dos"><div><label for="fecha">Fecha *</label><input id="fecha" name="fecha" type="date"></div><div><label for="hora">Hora *</label><input id="hora" name="hora" type="time"></div></div>
+<p class="error" id="error" role="alert"></p>
+<button class="btn" type="submit">Guardar cita</button></form></section>
+</main></div><script src="js/app.js"></script></body></html>
